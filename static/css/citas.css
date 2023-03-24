@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+    margin: 0 10px 0 10px;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+}
+input{
+    margin-top: 20px;
+    height: 30px;
+}
+th{
+    width: 200px;
+}
+.botonupdate{
+    color: white;
+    background-color: rgb(98, 142, 182);
+    border: none;
+    width: 55px;
+}
+.botondelete{
+    color: white;
+    background-color: rgb(168, 91, 91);
+    border: none;
+    width: 55px;
+}
+.boton{
+    background-color: rgb(69, 69, 128);
+    color: rgb(255, 255, 255);
+}

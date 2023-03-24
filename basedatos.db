@@ -1,0 +1,26 @@
+CREATE DATABASE eduardo;
+
+USE eduardo;
+
+CREATE TABLE usuarios ( 
+    id INT NOT NULL AUTO_INCREMENT, 
+    username VARCHAR(50) NOT NULL, 
+    password VARCHAR(110) NOT NULL, 
+    PRIMARY KEY (id) 
+);
+
+CREATE DATABASE eduardocitas;
+
+USE eduardocitas;
+
+CREATE TABLE usuarios ( 
+    id INT NOT NULL AUTO_INCREMENT, 
+    nombre VARCHAR(50) NOT NULL, 
+    apellido_paterno VARCHAR(50) NOT NULL, 
+    apellido_materno VARCHAR(50) NOT NULL, 
+    email VARCHAR(50) NOT NULL, 
+    tipo_sangre VARCHAR(50) NOT NULL ,
+    numero VARCHAR(50) NOT NULL, 
+    direccion VARCHAR(50) NOT NULL, 
+    PRIMARY KEY (id) 
+);

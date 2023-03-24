@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas</title>
+    <link rel="stylesheet" href="/static/css/editarcita.css">
+    <script src="../static/JS/html2pdf.bundle.min.js"></script>
+    <script src="../static/JS/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+                <p>Bienvenido , {{ session['username'] }}</p>
+                <form action="/logout"><button class="boton"  type="submit">Exit</button></form>
+            
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="{{url_for('actualizar_cita')}}" method="POST" autocomplete="off">
+                <h3>formulario</h3>
+                <input type="hidden" name="id" value="{{cita[0]}}">
+                <input type="text" value="{{cita[1]}}" name="nombre" id="nombre" placeholder="Nombre">
+                <input type="text" value="{{cita[2]}}" name="apellido_paterno" id="apellido_paterno" placeholder="Apellido Paterno">
+                <input type="text" value="{{cita[3]}}" name="apellido_materno" id="apellido_materno" placeholder="Apellido Materno">
+                <input type="email" value="{{cita[4]}}" name="email" id="email" placeholder="Email">
+                <input type="text" value="{{cita[5]}}" name="tipo_sangre" id="tipo_sangre" placeholder="Tipo de sangre">
+                <input type="text" value="{{cita[6]}}" name="numero" id="numero" placeholder="Numero telefonico">
+                <input type="text" value="{{cita[7]}}" name="direccion" id="direccion" placeholder="Direccion">
+                <button class="botonupdate" type="submit">Actualizar</button>       
+            </form>
+            <button class="convertir botondelete">Convertir a PDF</button>
+        </section>

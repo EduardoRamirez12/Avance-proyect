@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <title>Clinica Rojas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="citas.html">Cita</a></li>
+                <li><a href="especialidades.html">Especialidades</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
+                <p>Bienvenido , {{ session['username'] }}</p>
+                <form action="/logout"><button class="boton"  type="submit">Exit</button></form>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Somos una institución de salud con más 60 años de experiencia, que ofrece calidad de vida a sus pacientes a través de una completa y sólida estructura hospitalaria, recursos humanos calificados y tecnología de vanguardia, ofreciendo los mejores servicios con la más alta calidad.
+                <br>  
+                <h6>Misión </h6><p>Actuamos con amor y profesionalismo en el cuidado y la protección de la salud de cada persona.</p>
+                <h6>Visión </h6><p>Ser la principal opción de salud hospitalaria en el estado de Chiapas, expandiendo nuestra labor a toda la república mexicana.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
